@@ -9,6 +9,10 @@ body{
     z-index: 100;
 }
 
+.navbar-light{
+    background-color: white;
+}
+
 .navbar-nav{
     flex-direction: row;
 }
@@ -89,7 +93,12 @@ section{
     text-align: center;
 }
 
-.contenedor-servicios div img{
+.contenedor-servicios a{
+    cursor: pointer;
+    color: black;
+}
+
+.contenedor-servicios img{
     width: 250px;
     margin-bottom: 2rem;
 }
@@ -101,4 +110,109 @@ nav {
 
 .active-scrolled{
     color: rgb(18, 81, 135) !important;
+}
+
+summary{
+    cursor: default;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.footer-container img{
+    width: 100px;
+}
+
+.footer-container p{
+    font-size: 0.8rem;
+    color: darkslategray;
+}
+
+.half-header{
+    height: 40vh !important;
+    min-height: auto;
+}
+
+.us-head{
+    margin-top: 48px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/team.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+.contact-head{
+    margin-top: 48px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/contact.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    max-width: 100%;
+}
+
+.products-head{
+    margin-top: 48px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/img1.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    max-width: 100%;
+}
+
+.us-container{
+    padding: 0 3rem;
+}
+
+.us-container p{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.objectives-container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.objectives-container li{
+    margin: 1rem 2rem;
+    max-width: 350px;
+}
+
+.contact-container{
+    margin: 2rem 0;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.contact-container p{
+    margin: 0 ;
+}
+
+.contact-title{
+    font-size: 1.5rem;
+}
+
+.contact-content{
+    font-weight: bold;
+    color: #125187;
+}
+
+.products-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+}
+.products-gallery img{
+    width: 300px;
+    height: 250px;
 }
